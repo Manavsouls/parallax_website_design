@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Parallex</title>
+    
+</head>
+<body>
+    <!-- <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
+                <span class="navbar-toggle-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-links">Link</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    </div> -->
+
+    <div id="navbar">
+        <a href="javascript:void(0)" class="active">HOME</a>
+        <a href="javascript:void(0)" id="">PLACE</a>
+        <a href="javascript:void(0)" id="">CONTACT</a>
+    </div>
+
+
+
+    <div class="bgimg1">
+        <div class="caption">
+            <span class="border">SCROLL DOWN</span>
+        </div>
+    </div>
+    <div id="parallax" class="container">
+    <div style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:rgb(54, 54, 54);background-color: rgb(239, 245, 255);text-align:center;padding:50px 80px;text-align: justify;">
+    <h1 style="text-align:center;font-size:42px;">Parallax</h3>
+
+    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur necessitatibus minus accusamus voluptates, explicabo tenetur molestias, veritatis assumenda aliquid corrupti nisi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit placeat magnam ipsa quasi aut quidem sapiente sit eaque! Ratione commodi doloribus laudantium?</p>
+        </div>
+</div>
+<div class="bgimg2">
+    <div class="caption">
+        <span class="border" style="font-size:25px;background-color: black;opacity: 0.90;color:rgb(255, 254, 254);">LESS HEIGHT</span>
+    </div>
+</div>
+   <div style="position:relative;">
+        <div style="color:#ddd;background-color: #282e34;text-align:center;padding:50px 80px;">
+        <p>Scroll up and Down to reality get the feeling of how Parallax Scrolling Works</p>
+    </div>
+</div>
+<div class="bgimg3">
+    <div class="caption">
+        <span class="border" style="background-color:black;font-size:25px;color: #f7f7f7">SCROLL UP</span>
+    </div>
+</div>
+<script>
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if(window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        }else{
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+</body>
+</html>

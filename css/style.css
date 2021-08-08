@@ -1,0 +1,105 @@
+* {box-sizing: border-box}
+body, html{
+    scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+    color: rgb(224, 224, 224);
+}
+
+/* Style the navigation menu */
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+#navbar a{
+    float: left;
+    display:block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar a.active {
+    background-color: rgb(235, 55, 64);
+    color: rgb(255, 255, 255);
+}
+
+.content {
+    padding: 16px;
+}
+
+
+
+/* .parallax{ */
+    /* The image used */
+/* background-image: url("/img/pexels.jpg"); */
+
+/* Set a specific height */
+/* min-height: 500px; */
+
+
+/* Create the parallax scrolling effect */
+.bgimg1, .bgimg2, .bgimg3 {
+position: relative;
+opacity: 0.8;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.bgimg1 {
+    background-image: url("/img/jase.jpg");
+    min-height: 100%;
+}
+
+.bgimg2 {
+    background-image: url("/img/jezael.jpg");
+    min-height: 400px;
+}
+
+.bgimg3 {
+    background-image: url("/img/blexander.jpg");
+    min-height: 100%;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(235, 55, 64);
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+
+
+.container{
+    background-color: rgb(255, 238, 238);
+    padding: 20px 20px;
+    font-size: 22px;
+}
+
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg1 {
+        background-attachment: scroll; 
+    }
+}
